@@ -15,6 +15,7 @@
         margin-top: 70px;
         background: rgb(106, 57, 139);
         color: #000;
+        
         background-size: cover;
         background-position: center;
         font-family: Lato;
@@ -74,12 +75,17 @@
        header.style.borderBottom = 'solid 4px black';
        //Get Elements By ClassName//
        const card = document.getElementsByClassName('card-block');
-       card[0].style.fontWeight = 'bold';
-       card[0].style.backgroundColor = 'orange';
+       card[0].style.fontWeight.borderBottom = 'bold 5px #000';
+       card[0].style.backgroundColor = 'red';
        card[1].style.fontWeight = 'bold';
-       card[1].style.backgroundColor = 'lightblue';
+       card[1].style.backgroundColor = 'orange';
        card[2].style.fontWeight = 'bold';
-       card[2].style.backgroundColor = 'red';
+       card[2].style.backgroundColor = 'green';
+       /*
+       for(let i = 0; i < card.length; i++) {
+        card[i].style.backgroundColor = '#f4f4f4'
+       }
+       */
 
       document.getElementById("output").style.visibility = "hidden";
       document
